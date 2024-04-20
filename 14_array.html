@@ -47,7 +47,40 @@
     var newarray = array1.concat(array2);
     console.log(newarray);
 
-    newarray.slice(2);
+    newarray.slice(2);  // [3, 'hello', 5, true, 'yo', 'bro', 'welcome', 2, 3, 4, 5, 6, 15, 8, 9, 10]
+                        // outputs the elements after the given number of the array.
+
+    newarray.slice(-3); //[8, 9, 10]
+                        // outputs the values of the elements of the array, counting from the back.
+
+    newarray.slice(2,4); //[3, 'hello'] outputs the values of the elements from the start to the end of the given range.
+
+
+    var array3 = ["cat1","cat2","cat3","cat4","cat5","cat6"];
+    var newarray3 = array3.splice(3); // removes the elements of the array permanently from the given index onwards.
+    console.log(newarray3);
+    console.log(array3);
+
+    array3 = ["cat1","cat2","cat3","cat4","cat5","cat6"];
+    newarray3 = array3.splice(2,2); //first num-index number    second num-the amount of indexes to be removed from the given index onwards.
+    console.log(newarray3);
+    console.log(array3);
+
+
+    console.log(array2.indexOf(15)); // used to find the index of the given element.
+
+    console.log(array2.indexOf(11)); // if the element does not exist, the output will be -1.
+
+    var array3 = ["cat1","cat2","cat3","cat4","cat5","cat6", "cat3", "cat5"];
+
+    console.log(array3.indexOf("cat3"));
+    console.log(array3.lastIndexOf("cat3")); // outputs the last index of the given element when there are duplicates.
+
+    console.log(array3.includes("cat9")); // outputs a boolean value(true/false) depending on whether the given element is in the array.
+    console.log(array3.includes("cat4"));
+
+
+
 
 
 </script>
