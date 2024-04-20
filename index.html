@@ -2,26 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Javascript</title>
+    <title>Title</title>
 </head>
 <body>
 
-<h1>Apply Js in HTML</h1>
-
+<h1>Hello Js</h1>
 <script>
+    let str = "Hello Word";
 
-   console.log("Hello");
-   console.error("Hello");
-   console.warn("Hello");
-   console.info("Hello");
-   //console.clear();
-   console.table({id :1, name :'Dinali'});
+    let x = str.charAt(3);
+    console.log(x);
+
+    let y = str.charCodeAt(1); // return the unicode
+    console.log(y);
+
+    let str1 = "IJSE";
+    let str2 = "LK";
+
+    let concat = str1.concat(str2,"Sri lanka","Asia");
+    console.log(concat); //marge
+
+    let x1 = "https://ijse.lk";
+    let x2 = "https://facebook.com";
+
+    x1.endsWith("https");
+    x1.startsWith("https");
+
+    let charCode = String.fromCharCode(72);
+    console.log(charCode);
+
+    let include = str.includes("word");
+    console.log(include);
+
+    let indexOf = str.indexOf("word");
+    console.log(indexOf);
+
+    let str5 = "java,python,html";
+    let replace = str5.replace(",","/");
+    console.log(replace);
+
+    let replaceAll = str5.replaceAll(",","/");
+    console.log(replaceAll);
+
+    let search = str5.search("ht");
+    console.log(search);
+
+    let slice1 = str5.slice(5);
+    console.log(slice1);
+
+    let slice2 = str5.slice(5,10);
+    console.log(slice2);
+
+    let str6 ="Javascript";
+    let uc = str6.toUpperCase();
+    console.log(uc);
+
+    let lc = str6.toLowerCase();
+    console.log(lc);
+
+    let str7 = " kavindu@ijse.lk";
+    let trim = str7.trim();
+    console.log(trim);
+
+    var str8 = new String("hello");
+    var value = str8.valueOf();
+    console.log(value);
+
+
+    let split =   str5.split(",");
+    console.log(split);
+
+    //-----------------------------------------------------------------------------------------------
+
 
 
 
 
 
 </script>
-
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>String Methods</title>
+</head>
+<body>
+<h1>String Methods in JS</h1>
+<script>
+    // string method in JS
+
+    //charAt()
+    let str1 = "Hello World";
+    let x = str1.charAt(0);
+    console.log(x);
+
+    let str2 = "!!!";
+
+    let c = str1.concat(str2);
+    console.log(c);
+    //charCodeAt()
+    str1.charCodeAt(0);
+
+    let x1 = "https://ijse.lk";
+    // String eka strat ekai end ekai balanwa
+
+    console.log(x1.startsWith("https"));// true
+    console.log(x1.endsWith(".lk"));// true
+    console.log(x1.endsWith(".com"));// false
+
+    //String eka athule mehema ekka thiyenwada balanawa
+
+    console.log(x1.includes("ijse"));// true
+    console.log(x1.includes("hello"));// false
+
+    let Str = "Hello world";
+    //         012345678910
+    console.log(Str.indexOf("world"));// 6
+    console.log(Str.indexOf("d"));// 10
+    console.log(Str.match(/o/g));//[o,o]
+
+
+    let Str1 = "java,python,go";
+    // replace
+    console.log(Str1.replace("java","/"));
+    console.log(Str1.replace(",","/"));
+
+    let Search = "Welcome to JS";
+    // search
+    console.log(Search.search("to"));// 8
+    console.log(Search.search("o"));// 4
+    console.log(Search.search("1"));// -1
+
+    let Slice = "java,python,go";
+    //slice - api kiyana index eke idn ithuru tika pennawa
+    console.log(Slice.slice(2,10));
+
+    let str = "JavaScript";
+    console.log(str.toUpperCase());// All in CAPITAL
+    console.log(str.toLowerCase());// All in simple
+
+    let Trim = "sithiraroneth@gmail.com";
+    //trim -- depaththe space ain wenwa
+    console.log(Trim.trim());
+
+    var obj = new String("hello");
+    //String object
+    console.log(obj);
+    //object eka athule values
+    console.log(obj.valueOf());
+
+    var Split = "java,python,go";
+    console.log(Split.split(","))
+
+</script>
+
+</body>
+</html>

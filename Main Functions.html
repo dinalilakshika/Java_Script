@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions</title>
+</head>
+<body>
+
+<h1>Functions</h1>
+
+<label for="name" style="font-style: italic">Name</label>
+<input type="text" id="name" placeholder="Enter Your Name" style="border-radius: 5px">
+<hr>
+<input type="number" placeholder="0000">
+<input type="number" placeholder="0000">
+<button>Find Sum</button>
+<h4></h4>
+
+<script>
+    /*console.log("[  Function  ]")
+    // Name Function
+    function myFunction(){
+        console.log("Welcome to Function")
+    }
+    myFunction();
+
+    //Pass Parameters
+    function myFunction2(a,z){
+        console.log("Parameters total : " + (a+z))
+    }
+    myFunction2(10,20);
+
+    console.log("\n[   Function Expression   ]")
+    var myFunction3 = function (x,y) {
+        console.log("Welcome to myFunction : " + (x+y))
+    }
+    myFunction3(30,40);
+
+    // Arrow Function
+    console.log("\n Arrow Function")
+
+    var ArrowFunction = () =>{
+        console.log("Welcome to Arrow Function")
+    }
+    ArrowFunction();
+
+    // Pass Parameters
+    var ArrowFunction2 = (c,v) =>{
+        console.log("Result : " + (c+v))
+    }
+    ArrowFunction2(90,100);
+
+    // Anonymous Function
+    console.log("\n Anonymous Function");
+
+    (function(){
+        console.log("I am an Anonymous Function");
+    });
+
+    // callback Function
+    console.log("\nCallback Function");
+
+    function callback(){
+        console.log("welcome to callback function");
+    }
+
+    function callback2(){
+        console.log("welcome to callback function 2");
+    }
+
+    function process(param){
+        param();
+    }
+
+    process(callback());
+    process(callback2());*/
+
+    console.log("........................................................");
+
+    var fn = new Function('Sithira','Roneth','return Sithira + Roneth');
+    var result = fn(100,200);
+    console.log("Result : "+result);
+
+    document.querySelectorAll("input")[0].addEventListener("input",function (){
+        console.log(event.target.value);
+    });
+    document.querySelectorAll("button")[0].addEventListener("click",function (){
+        var in1 = document.querySelectorAll("input")[1].value;
+        var in2 = document.querySelectorAll("input")[2].value;
+
+        var sum = +in1+ +in2;
+        document.getElementsByTagName("h4")[0].innerText = sum;
+    });
+
+</script>
+</body>
+</html>
