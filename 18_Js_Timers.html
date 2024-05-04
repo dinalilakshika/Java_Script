@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM</title>
+
+  <style>
+
+  </style>
+
+
+</head>
+<body>
+<h1>JS timers</h1>
+<script src="assets/jquery-3.7.1.min.js"></script>
+
+<script>
+  function callMe(){
+    console.log("Called!");
+  }
+  function myInterval(){
+    console.log("Looping");
+  }
+  var count;
+  function callMe2(){
+    console.log("Called!");
+    ++count;
+    if(count>5){
+      clearInterval(myInterval);
+    }
+  }
+  setTimeout(callMe,5000); //5000ms
+  setTimeout(callMe2,5000); //loop
+  myInterval = setInterval(callMe2,5000);
+</script>
+</body>
+</html>

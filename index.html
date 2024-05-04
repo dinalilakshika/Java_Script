@@ -1,84 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+
+    <style>
+
+    </style>
+
+
 </head>
 <body>
+<h1>JS timers</h1>
+<script src="assets/jquery-3.7.1.min.js"></script>
 
-<h1>Hello Js</h1>
 <script>
-    let str = "Hello Word";
-
-    let x = str.charAt(3);
-    console.log(x);
-
-    let y = str.charCodeAt(1); // return the unicode
-    console.log(y);
-
-    let str1 = "IJSE";
-    let str2 = "LK";
-
-    let concat = str1.concat(str2,"Sri lanka","Asia");
-    console.log(concat); //marge
-
-    let x1 = "https://ijse.lk";
-    let x2 = "https://facebook.com";
-
-    x1.endsWith("https");
-    x1.startsWith("https");
-
-    let charCode = String.fromCharCode(72);
-    console.log(charCode);
-
-    let include = str.includes("word");
-    console.log(include);
-
-    let indexOf = str.indexOf("word");
-    console.log(indexOf);
-
-    let str5 = "java,python,html";
-    let replace = str5.replace(",","/");
-    console.log(replace);
-
-    let replaceAll = str5.replaceAll(",","/");
-    console.log(replaceAll);
-
-    let search = str5.search("ht");
-    console.log(search);
-
-    let slice1 = str5.slice(5);
-    console.log(slice1);
-
-    let slice2 = str5.slice(5,10);
-    console.log(slice2);
-
-    let str6 ="Javascript";
-    let uc = str6.toUpperCase();
-    console.log(uc);
-
-    let lc = str6.toLowerCase();
-    console.log(lc);
-
-    let str7 = " kavindu@ijse.lk";
-    let trim = str7.trim();
-    console.log(trim);
-
-    var str8 = new String("hello");
-    var value = str8.valueOf();
-    console.log(value);
-
-
-    let split =   str5.split(",");
-    console.log(split);
-
-    //-----------------------------------------------------------------------------------------------
-
-
-
-
-
-
+    function callMe(){
+        console.log("Called!");
+    }
+    function myInterval(){
+        console.log("Looping");
+    }
+    var count;
+    function callMe2(){
+        console.log("Called!");
+        ++count;
+        if(count>5){
+            clearInterval(myInterval);
+        }
+    }
+    setTimeout(callMe,5000); //5000ms
+    setTimeout(callMe2,5000); //loop
+    myInterval = setInterval(callMe2,5000);
 </script>
 </body>
 </html>

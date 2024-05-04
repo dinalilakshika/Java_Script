@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+<ul id="first-list">
+  <li>Java</li>
+  <li>Python</li>
+  <li>C</li>
+  <li>C++</li>
+  <li>C#</li>
+</ul>
+
+<ul id="second-list">
+  <li>React</li>
+  <li>Angular</li>
+  <li>Vue</li>
+</ul>
+
+<script src="assets/lib/jquery-3.7.1.min.js"></script>
+
+<script>
+  $("#first-list>li").eq(2).text("GO"); //changing the text from C language to GO.
+  $("#first-list>li:nth-child(3)").text("C"); // changing the text from Go to C.
+
+  $(document).ready(function(){
+
+  })
+
+
+</script>
+
+</body>
+</html>
